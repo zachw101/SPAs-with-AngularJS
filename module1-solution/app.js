@@ -1,11 +1,11 @@
 (function () {
   'use strict';
   
-  angular.module('LunchApp', [])
-  .controller('LunchCheckerController', LunchCheckerController);
+  angular.module('LunchCheck', [])
+  .controller('LunchCheckController', LunchCheckController);
   
-  LunchCheckerController.$inject = ['$scope'];
-  function LunchCheckerController ($scope) {
+  LunchCheckController.$inject = ['$scope'];
+  function LunchCheckController ($scope) {
     $scope.lunchMessage = "";
     $scope.lunchItems = "";
     $scope.messageColor = "text-danger";

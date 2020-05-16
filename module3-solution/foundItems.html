@@ -1,0 +1,11 @@
+
+<div class="jumbotron">
+  <div class="error" ng-if="foundList.emptyMessage()">Nothing found</div>
+  <br>
+  <ol>
+    <li ng-repeat="item in foundList.items track by $index">
+      <button ng-click="foundList.onRemove({index: $index});" style="padding-right: 5px;">Don't want this one!</button>
+      {{ item.name }}, Short Name: {{item.short_name}}, Description: {{ item.description }} 
+    </li>
+  </ol>
+</div>
